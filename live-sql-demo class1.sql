@@ -1,0 +1,5 @@
+-- select first_name,last_name,upper(last_name),first_name || last_name from hr.employees
+-- From hr.employees where customer_id = 1
+-- select * from hr.employees where salary > 10000
+-- select * from hr.employees where employee_id = 1
+-- select * from hr.employees where job_id ='It_prog'
