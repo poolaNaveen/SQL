@@ -15,7 +15,8 @@
 -- select cust_gender,cust_city from sh.customers where cust_gender = 'F' and cust_city = 'SYDNEY'
 
 -- 4. Find customers with income level `"G: 130,000 - 149,999"`.
-select cust_income_level from sh.customers where cust_income_level = 'G: 130,000 - 149,999'
+-- select cust_income_level from sh.customers where cust_income_level = 'G: 130,000 - 149,999'
+
 
 
 
