@@ -7,7 +7,7 @@
 -- from hr.employees
 -- SELECT * FROM ALL_TAB_COLUMNS 
 -- WHERE TABLE_NAME = 'CUSTOMERS' AND OWNER = 'SH';
- -- 1. Find customers born after the year 1990.
+-- 1. Find customers born after the year 1990.
 -- SELECT * FROM SH.customers WHERE CUST_YEAR_OF_BIRTH > 1990;
 -- 2. List all male customers (`CUST_GENDER = 'M'`)
 -- select CUST_GENDER from sh.customers where cust_gender='M'
@@ -16,6 +16,7 @@
 
 -- 4. Find customers with income level `"G: 130,000 - 149,999"`.
 -- select cust_income_level from sh.customers where cust_income_level = 'G: 130,000 - 149,999'
+
 
 
 
