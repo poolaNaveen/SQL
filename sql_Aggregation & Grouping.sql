@@ -114,6 +114,43 @@
 --     )      
 -- order by
 --     country_avg_credit_limit DESC;
+-- Calculate the variance and standard deviation of customer credit limits by country.
+-- SELECT
+--     country_id,
+--     VARIANCE(credit_limit) AS variance_credit_limit,
+--     STDDEV(credit_limit) AS stddev_credit_limit
+-- FROM
+--     sh.customers
+-- GROUP BY
+--     country_id
+-- ORDER BY
+--     country_id;
+-- Find the state with the smallest range (max–min) in credit limits.
+-- SELECT
+--     cust_state_province AS state,
+--     (MAX(credit_limit) - MIN(credit_limit)) AS credit_range
+-- FROM
+--     sh.customers
+-- WHERE
+--     cust_state_province IS NOT NULL
+-- GROUP BY
+--     cust_state_province
+-- ORDER BY
+--     credit_range ASC
+-- FETCH FIRST 1 ROWS ONLY;
+-- Show the total number of customers per income level and the percentage contribution of each.
+-- SELECT
+--     cust_income_level,
+--     COUNT(*) AS total_customers,
+--     ROUND((COUNT(*) * 100 / SUM(COUNT(*)) OVER ()), 2) AS percentage_contribution
+-- FROM
+--     sh.customers
+-- GROUP BY
+--     cust_income_level
+-- ORDER BY
+--     total_customers DESC;
+
+
 
 
 
